@@ -1,0 +1,26 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- what_do_you_have
+- order
+- deny
+- affirm
+- goodbye
+- bot_challenge
+- thanks
+responses:
+  utter_botgreet:
+  - text: Hello, welcome to our grocery store. How can I help you?
+  utter_all_products:
+  - text: We are having all fruits,vegetables and dairy products
+  utter_anythingelse:
+  - text: Is there anything else sir?
+  utter_thanks:
+  - text: thanks
+actions:
+- utter_botgreet
+- utter_all_products
+- utter_anythingelse
+- utter_thanks
